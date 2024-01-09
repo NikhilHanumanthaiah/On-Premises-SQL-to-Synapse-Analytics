@@ -44,8 +44,8 @@ Objective of the project is integrating the data from On-prem SQL server to clou
     - [`data_ingestion_pipeline.json`](/Docs/Scripts/ADF/data_ingestion_pipline.json) : JSON file describing the data ingestion pipeline in Azure Data Factory.
 
 - **Databricks:**
-     - [`mounting.py`](/Docs/Scripts/Databrics/Storage\Mounting.ipynb) - Script used to mount the ADLS Gen2 containers to the Databricks.
-     - `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
+     - [`mounting.py`](/Docs/Scripts/Databrics/Storage\storage_mounting.ipynb) - Script used to mount the ADLS Gen2 containers to the Databricks.
+     - [`transformation_script.py`](/Docs/Scripts/Databrics/Storage\storage_mounting.ipynb): PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
 
 
 ### **Azure Resources: **
