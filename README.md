@@ -7,7 +7,7 @@ Azure Data Engineering: On-Premises SQL to Synapse Analytics
 Azure Data Engineering: On-Premises SQL to Synapse Analytics
 
 ### Project Overview:
-This end-to-end solution leverages Azure Data Factory for efficient data extraction from on-prem Microsoft SQL Server, Azure Databricks for dynamic transformations, and Azure Synapse Analytics for high-performance analytics. The journey begins with secure data ingestion into Azure Data Lake Storage Gen2, followed by transformative processing in Databricks, and culminates in insightful visualizations through Power BI. Azure Key Vault ensures the security with
+This end-to-end solution leverages Azure Data Factory for efficient data extraction from on-prem Microsoft SQL Server, Azure Databricks for dynamic transformations, and Azure Synapse Analytics for high-performance analytics. The journey begins with secure data ingestion into Azure Data Lake Storage Gen2, followed by transformative processing in Databricks, and culminates in insightful visualizations through Power BI. Azure Key Vault ensures the security with credentials.
 
 
 ### Project Description:
