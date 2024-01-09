@@ -1,2 +1,2 @@
-# On-Premises-SQL-to-Synapse-Analytics
+# On-Premises SQL to Synapse Analytics
 Azure Data Engineering: On-Premises SQL to Synapse Analytics
