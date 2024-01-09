@@ -41,7 +41,8 @@ Objective of the project is integrating the data from On-prem SQL server to clou
 ### Script Descriptions:
 
 - **ADF (Azure Data Factory): **
-    - [`data_ingestion_pipeline.json`](Docs/Scripts/ADF/data_ingestion_pipeline.json) : JSON file describing the data ingestion pipeline in Azure Data Factory.
+    - [`data_ingestion_pipeline.json`](On-Premises-SQL-to-Synapse-Analytics/Docs/Scripts/ADF
+/data_ingestion_pipline.json) : JSON file describing the data ingestion pipeline in Azure Data Factory.
 
 - **Databricks:**
      - `mounting.py`  - Script used to mount the ADLS Gen2 containers to the Databricks.
