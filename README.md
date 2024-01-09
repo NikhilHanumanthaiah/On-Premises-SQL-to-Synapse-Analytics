@@ -61,27 +61,27 @@ Objective of the project is integrating the data from On-prem SQL server to clou
 ## Usage Instructions
 
 1. **Data Ingestion: **
-   -Create Azure Data Factory in nearby location.
-   -Create Self-Hosted integration runtime and install the Runtime in on-prem network. However, in my case, installed in local system where Microsoft SQL server is installed.
-   -Create the Linked Service to connect to on-prem SQL server and use Azure Ky Vault to store the credential.
-   -Create pipeline and use the Look Up activity to list all the tables in the on-prem SQL server.
-   -Create ForEach activity to take table names from Look Up activity and copy the data from the on-prem SQL Server.
-   -Create Notebook Activity in the pipeline to transform the data using the interactive notebook and cluster which is created in the Azure Databricks.
+   - Create Azure Data Factory in nearby location.
+   - Create Self-Hosted integration runtime and install the Runtime in on-prem network. However, in my case, installed in local system where Microsoft SQL server is installed.
+   - Create the Linked Service to connect to on-prem SQL server and use Azure Ky Vault to store the credential.
+   - Create pipeline and use the Look Up activity to list all the tables in the on-prem SQL server.
+   - Create ForEach activity to take table names from Look Up activity and copy the data from the on-prem SQL Server.
+   - Create Notebook Activity in the pipeline to transform the data using the interactive notebook and cluster which is created in the Azure Databricks.
  
 
 2. **Data Transformation: **
-   -Create Azure Databricks workspace, and create cluster in the workspace.
-   -Create notebook and mount the containers in the ADLS Gen2 to DBFS.
-   -Create new notebook and write the code to transform and store the data back to ADLS Gen2.
+   - Create Azure Databricks workspace, and create cluster in the workspace.
+   - Create notebook and mount the containers in the ADLS Gen2 to DBFS.
+   - Create new notebook and write the code to transform and store the data back to ADLS Gen2.
 
 3. **Data Loading: **
-   -Create the Azure Synapse workspace.
-   -Create the Database with appropriate database name.
-   -Create Lakehouse and create the database using table from ADLS Gen2 from the Create table option in Synapse Analytics Workspace.
+   - Create the Azure Synapse workspace.
+   - Create the Database with appropriate database name.
+   - Create Lakehouse and create the database using table from ADLS Gen2 from the Create table option in Synapse Analytics Workspace.
  
 4. **Visualization: **
-   -Load the data from Azure Synapse Analytics to PowerBI.
-   -Create required visualization in PowerBI
+   - Load the data from Azure Synapse Analytics to PowerBI.
+   - Create required visualization in PowerBI
  
 ## Conclusion
 
