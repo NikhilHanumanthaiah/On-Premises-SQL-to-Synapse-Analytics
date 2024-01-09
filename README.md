@@ -17,7 +17,7 @@ Objective of the project is integrating the data from On-prem SQL server to clou
  
 1. **Data Extraction (On-Premises SQL Server to ADLS Gen2): **
    - Utilized Azure Data Factory to extract data from the on-premises SQL Server.
-      - Created a container and a "raw" folder in ADLS Gen2 to store the extracted data.
+   - Created a container and a "raw" folder in ADLS Gen2 to store the extracted data.
    - Used a self-hosted integration runtime for copying data from the on-premises SQL Server to ADLS Gen2.
 
 2. **Data Transformation (Azure Databricks): **
@@ -41,11 +41,11 @@ Objective of the project is integrating the data from On-prem SQL server to clou
 ### Script Descriptions:
 
 - **ADF (Azure Data Factory): **
-  - `data_ingestion_pipeline.json` : JSON file describing the data ingestion pipeline in Azure Data Factory.
+-  `data_ingestion_pipeline.json` : JSON file describing the data ingestion pipeline in Azure Data Factory.
 
 - **Databricks:**
  - Mounting.py  - Script used to mount the ADLS Gen2 containers to the Databricks.
- -  `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
+ - `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
 
 
 ### **Azure Resources: **
