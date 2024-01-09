@@ -8,7 +8,7 @@ Azure Data Engineering: On-Premises SQL to Synapse Analytics
 
 ### Project Overview:
 This end-to-end solution leverages Azure Data Factory for efficient data extraction from on-prem Microsoft SQL Server, Azure Databricks for dynamic transformations, and Azure Synapse Analytics for high-performance analytics. The journey begins with secure data ingestion into Azure Data Lake Storage Gen2, followed by transformative processing in Databricks, and culminates in insightful visualizations through Power BI. Azure Key Vault ensures the security with credentials.
-
+![DataFlowDiagram](https://github.com/NikhilHanumanthaiah/On-Premises-SQL-to-Synapse-Analytics/assets/146332720/d203de55-5957-4032-8596-97446ee525fb)
 
 ### Project Description:
 Provide a brief overview of the project, its objectives, and the problem it aims to solve.
@@ -44,7 +44,7 @@ Objective of the project is integrating the data from On-prem SQL server to clou
     - `data_ingestion_pipeline.json` : JSON file describing the data ingestion pipeline in Azure Data Factory.
 
 - **Databricks:**
-     - Mounting.py  - Script used to mount the ADLS Gen2 containers to the Databricks.
+     - `mounting.py`  - Script used to mount the ADLS Gen2 containers to the Databricks.
      - `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
 
 
@@ -55,7 +55,7 @@ Objective of the project is integrating the data from On-prem SQL server to clou
 - Storage Account – Namespace enabled
 - PowerBI
 - Azure Key vault
- 
+ ![ResourceGroup](https://github.com/NikhilHanumanthaiah/On-Premises-SQL-to-Synapse-Analytics/assets/146332720/45ee4319-9fa0-4182-bab7-86f76b355315)
 
 ## Usage Instructions
 
@@ -66,7 +66,7 @@ Objective of the project is integrating the data from On-prem SQL server to clou
    - Create pipeline and use the Look Up activity to list all the tables in the on-prem SQL server.
    - Create ForEach activity to take table names from Look Up activity and copy the data from the on-prem SQL Server.
    - Create Notebook Activity in the pipeline to transform the data using the interactive notebook and cluster which is created in the Azure Databricks.
- 
+ ![Pipeline-ADF](https://github.com/NikhilHanumanthaiah/On-Premises-SQL-to-Synapse-Analytics/assets/146332720/88bb1947-8b90-481f-9073-f9abdc915800)
 
 2. **Data Transformation: **
    - Create Azure Databricks workspace, and create cluster in the workspace.
@@ -77,11 +77,13 @@ Objective of the project is integrating the data from On-prem SQL server to clou
    - Create the Azure Synapse workspace.
    - Create the Database with appropriate database name.
    - Create Lakehouse and create the database using table from ADLS Gen2 from the Create table option in Synapse Analytics Workspace.
- 
+ ![AdventureworksTable](https://github.com/NikhilHanumanthaiah/On-Premises-SQL-to-Synapse-Analytics/assets/146332720/4c5be9ae-cf36-42e1-b60a-d4419ba85ff5)
+
 4. **Visualization: **
    - Load the data from Azure Synapse Analytics to PowerBI.
    - Create required visualization in PowerBI
- 
+ ![PowerBi-visual](https://github.com/NikhilHanumanthaiah/On-Premises-SQL-to-Synapse-Analytics/assets/146332720/d312ca17-f33e-4795-9e33-04a138906ea8)
+
 ## Conclusion
 
 Successfully completed project for integrating data from on-premises SQL servers to the Azure Synapse Analytics. It's been an adventure, leveraging the power of Azure Data Factory, Databricks, and Synapse Analytics to create a seamless, end-to-end solution. From the secure storage in Azure Data Lake Storage Gen2 to the transformation in Databricks and the beautiful insights in Power BI, this project has not just elevated data engineering capabilities but has also turned data into a storytelling sensation
