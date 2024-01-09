@@ -6,7 +6,7 @@ Azure Data Engineering: On-Premises SQL to Synapse Analytics
 ### Project Title:
 Azure Data Engineering: On-Premises SQL to Synapse Analytics
 
-###Project Overview:
+### Project Overview:
 This end-to-end solution leverages Azure Data Factory for efficient data extraction from on-prem Microsoft SQL Server, Azure Databricks for dynamic transformations, and Azure Synapse Analytics for high-performance analytics. The journey begins with secure data ingestion into Azure Data Lake Storage Gen2, followed by transformative processing in Databricks, and culminates in insightful visualizations through Power BI. Azure Key Vault ensures the security with
 
 
@@ -45,17 +45,16 @@ Objective of the project is integrating the data from On-prem SQL server to clou
 
 - **Databricks:**
  - Mounting.py  - Script used to mount the ADLS Gen2 containers to the Databricks.
-  - `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
+ -  `transformation_script.py`: PySpark script used to transform the raw data in the ADLS Gen2 to container called ‘raw’
 
-## Setup Instructions
 
-1. **Azure Resources: **
-   - Azure Data Factory
-   - Azure Databricks
-  - Azure Synapse Analytics
-  - Storage Account – Namespace enabled
-  - PowerBI
- -  Azure Key vault
+### **Azure Resources: **
+- Azure Data Factory
+- Azure Databricks
+- Azure Synapse Analytics
+- Storage Account – Namespace enabled
+- PowerBI
+- Azure Key vault
  
 
 ## Usage Instructions
